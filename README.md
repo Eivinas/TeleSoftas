@@ -19,10 +19,12 @@ Task 3
 You can select elements in tables using "tr" and  "td" atributes. On simple text used double clicking and on links used click and hold to certain locations. File name `Task3.py`.
 
 ----
-Task 4 (test_upper_case_file.py) 
+Task 4
 ----
+
+To run test use: 
 ```commandline
-To run test use: pytest test_upper_case_file.py ("-s" "-v" optional)
+pytest test_upper_case_file.py ("-s" "-v" optional)
 ```
 To work test script `test_upper_case_file.py` must be placed in pytest_click_app-master directory. 
 Test fails duo to something.output inconsistencies.
