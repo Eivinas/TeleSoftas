@@ -19,15 +19,17 @@ driver.find_element(By.ID, "dropdownMenu3").click()
 driver.find_element(By.LINK_TEXT, "Kaunas").click()
 driver.find_element(By.CSS_SELECTOR, ".bn").click() 
 
-time.sleep(1.5)
+time.sleep(2)
 driver.find_element(By.ID, "btnBuy-23125").click() 
 
 time.sleep(2)
 driver.find_element(By.XPATH, "//a[contains(text(),'Pirkti')]").click()
-
+time.sleep(1)
 # If dialog for login appears
 try:
-    element = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.ID, "btnNoLogin")))
+    element = WebDriverWait(driver, 5).until(
+        EC.visibility_of_element_located((By.ID, "btnNoLogin"))
+    )
 except:
     print("No dialog")
 finally: 
