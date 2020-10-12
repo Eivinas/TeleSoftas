@@ -1,7 +1,7 @@
 # Scripts goes to https://www.tiketa.lt/EN/search and follows the steps:
-# 1) Writes trys in Caption field 2) Selects Kaunas city 3) Chooses dates 2020-09-01 - 2021-12-31
+# 1) Writes "trys" in Caption field 2) Selects Kaunas city 3) Chooses dates 2020-09-01 - 2021-12-31
 # 4) Presses Search button 5) Presses Buy button on „TRYS PARŠIUKAI“ event 
-# 6) Ppresses Buy 7) Selects Balkonas sector
+# 6) Presses Buy 7) Selects Balkonas sector
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By

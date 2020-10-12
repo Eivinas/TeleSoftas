@@ -1,5 +1,5 @@
 # Scripts goes to https://www.tiketa.lt/EN/search and follows the steps:
-# 1) Writes Forum in Caption field 2) Selects Kaunas city 3) Chooses dates 2020-09-01 - 2021-12-31
+# 1) Writes "Forum" in Caption field 2) Selects Kaunas city 3) Chooses dates 2020-09-01 - 2021-12-31
 # 4) Presses Search button 5) Presses Buy button on “ Intelligent Forum ” event 
 # 6) Selects “ Intelligent Forum ” and presses Buy 7) Selects 40 € price 8) Selects Sėdimas sector
 import time

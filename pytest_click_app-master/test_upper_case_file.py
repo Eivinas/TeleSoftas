@@ -1,5 +1,6 @@
 # Tests script upper_case_file by comparing new compiled files with referenced files from data folder
-# data folder files must have *input.txt/*output.txt in their name.
+# Script must be placed in pytest_click_app-master directory to work.
+# data folder files must have *input.txt/*output.txt in their name. 
 # To run: pytest 
 import pytest
 import upper_case_file 
