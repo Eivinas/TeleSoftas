@@ -25,6 +25,7 @@ driver.find_element(By.ID, "btnBuy-23125").click()
 time.sleep(2)
 driver.find_element(By.XPATH, "//a[contains(text(),'Pirkti')]").click()
 time.sleep(1)
+
 # If dialog for login appears
 try:
     element = WebDriverWait(driver, 5).until(
@@ -32,10 +33,11 @@ try:
     )
 except:
     print("No dialog")
-finally: 
+else: 
     driver.find_element(By.ID, "btnNoLogin").click() 
   
 # Google anti robot captcha
+time.sleep(2)
 driver.find_element(By.CSS_SELECTOR, ".price-container-block:nth-child(3) label").click()
 driver.find_element(By.XPATH, "//div[@id=\'sectorsList\']/div/div/div/label").click()
 time.sleep(5)

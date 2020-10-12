@@ -31,10 +31,14 @@ try:
     element = WebDriverWait(driver, 5).until(
         EC.visibility_of_element_located((By.ID, "btnNoLogin"))
     )
-finally: 
+except:
+    print("No dialog")
+else: 
     driver.find_element(By.ID, "btnNoLogin").click()
   
 # Google anti robot captcha
-driver.find_element(By.CSS_SELECTOR, ".hover").click()
+self.driver.execute_script("window.scrollTo(0,662)")
+self.driver.switch_to.frame(0)
+self.driver.find_element(By.CSS_SELECTOR, ".svg-holder [data-style=\'0\'] path:first-child").click()
 time.sleep(5)
 driver.quit()
